@@ -1,5 +1,5 @@
-# vim-ultisnips-react
-Vim  UltiSnips snippets for React using modern ES6 syntax
+# vim-ultisnips-javascript
+Vim  UltiSnips snippets for javascript using modern ES6 syntax
 
 ## Snippets for es6
 
