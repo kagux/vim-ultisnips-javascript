@@ -1,0 +1,105 @@
+global !p
+fn_base = fn.split(os.extsep)[0]
+#convert to camel case
+if fn_base != fn_base.lower() and fn_base != fn_base.upper():
+	class_name = fn_base
+else:
+	class_name = class_name = "".join(map(lambda x: x.title(), fn_base.split('_')))
+endglobal
+
+# -------------- r (react)
+snippet rc "React Component"
+import React from 'react';
+
+class `!p snip.rv = class_name` extends React.Component {
+	static propTypes = {
+	}
+
+	static defaultProps = {
+	}
+
+	render() {
+		return (
+			${1:<div>Hello world</div>}
+		);
+	}
+}
+export default `!p snip.rv = class_name`;
+endsnippet
+
+# --------- rcf react class function
+snippet rcf "React Component as pure function"
+import React from 'react';
+
+export default const `!p snip.rv = class_name` = (props) => {
+	return (
+		<div>`!p snip.rv = class_name`</div>
+	);
+}
+endsnippet
+
+# --------- PropTypes rpt
+snippet rpt "React.PropTypes."
+$2: React.PropTypes.$1
+endsnippet
+
+snippet rpta "React.PropTypes.array"
+$1: React.PropTypes.array
+endsnippet
+
+snippet rptb "React.PropTypes.bool"
+$1: React.PropTypes.bool
+endsnippet
+
+snippet rptn "React.PropTypes.number"
+$1: React.PropTypes.number
+endsnippet
+
+snippet rptf "React.PropTypes.func"
+$1: React.PropTypes.func
+endsnippet
+
+snippet rpto "React.PropTypes.object"
+$1: React.PropTypes.object
+endsnippet
+
+snippet rpts "React.PropTypes.string"
+$1: React.PropTypes.string
+endsnippet
+
+snippet rpte "React.PropTypes.element"
+$1: React.PropTypes.element
+endsnippet
+
+# --------- rpt
+snippet rptr "React.PropTypes..isRequired"
+$2: React.PropTypes.$1.isRequired
+endsnippet
+
+snippet rptar "React.PropTypes.array.isRequired"
+$1: React.PropTypes.array.isRequired
+endsnippet
+
+snippet rptbr "React.PropTypes.bool.isRequired"
+$1: React.PropTypes.bool.isRequired
+endsnippet
+
+snippet rptnr "React.PropTypes.number.isRequired"
+$1: React.PropTypes.number.isRequired
+endsnippet
+
+snippet rptfr "React.PropTypes.func.isRequired"
+$1: React.PropTypes.func.isRequired
+endsnippet
+
+snippet rptor "React.PropTypes.object.isRequired"
+$1: React.PropTypes.object.isRequired
+endsnippet
+
+snippet rptsr "React.PropTypes.string.isRequired"
+$1: React.PropTypes.string.isRequired
+endsnippet
+
+snippet rpter "React.PropTypes.element.isRequired"
+$1: React.PropTypes.element.isRequired
+endsnippet
