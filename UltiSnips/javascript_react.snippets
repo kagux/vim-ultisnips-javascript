@@ -20,7 +20,7 @@ class `!p snip.rv = class_name` extends React.Component {
 
 	render() {
 		return (
-			${1:<div>Hello world</div>}
+			${1:<div></div>}
 		);
 	}
 }
@@ -31,9 +31,9 @@ endsnippet
 snippet rcf "React Component as pure function"
 import React from 'react';
 
-export default const `!p snip.rv = class_name` = (props) => {
+const `!p snip.rv = class_name` = () => {
 	return (
-		<div>`!p snip.rv = class_name`</div>
+		${1:<div></div>}
 	);
 }
 
@@ -42,6 +42,8 @@ export default const `!p snip.rv = class_name` = (props) => {
 
 `!p snip.rv = class_name`.defaultProps = {
 };
+
+export default `!p snip.rb = class_name`;
 endsnippet
 
 # --------- PropTypes rpt
