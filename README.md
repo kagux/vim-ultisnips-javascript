@@ -18,6 +18,7 @@ Vim  UltiSnips snippets for javascript using modern ES6 syntax
   * ``rpto`` - **P**rop**T**ypes.**o**bject
   * ``rpts`` - **P**rop**T**ypes.**s**tring
   * ``rpte`` - **P**rop**T**ypes.**e**lement
+  * ``rpty`` - **P**rop**T**ypes.an**y**
 
   * ``rptr`` - **P**rop**T**ypes.[$1].is**R**equired
   * ``rptar`` - **P**rop**T**ypes.**a**rray.is**R**equired
@@ -27,3 +28,4 @@ Vim  UltiSnips snippets for javascript using modern ES6 syntax
   * ``rptor`` - **P**rop**T**ypes.**o**bject.is**R**equired
   * ``rptsr`` - **P**rop**T**ypes.**s**tring.is**R**equired
   * ``rpter`` - **P**rop**T**ypes.**e**lement.is**R**equired
+  * ``rptyr`` - **P**rop**T**ypes.an**y**.is**R**equired
